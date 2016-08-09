@@ -9,7 +9,8 @@ header{
     padding: 0;
     height: 150px;
     width: 100%;
-    background: white;
+    background-image: url("http://www.planwallpaper.com/static/images/739916-awesome-background-images.jpg");
+    background-color: white;
     text-align: center;
     color: #00001a;
 }
