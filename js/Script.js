@@ -9,7 +9,7 @@ $(document).ready(function(){
   });
   $("#tButton1").click(function(){
     $("#gitHub").toggle();
-    $("#background").animate({left: '100px'});
+    $("#background").animate({left: '0px'});
   });
 });
 
