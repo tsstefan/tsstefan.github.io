@@ -1,0 +1,12 @@
+body{
+    background: orange;
+}
+nav{
+    margin: 20px auto;
+    color: white;
+}
+nav a{
+    padding: 10px;
+    background: #199fdb;
+    color: white;
+}

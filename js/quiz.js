@@ -17,7 +17,7 @@ function submitAnswers(args) {
     for(i = 1; i <=5; i++){
       if (eval('q'+i)==null || eval('q'+i)=='') {
     // eval to contatenate value of variable to other variable -> q1, q2, q3 ...
-        alert('You missed question '+(i+1));
+        alert('You missed question '+(i));
         return false;
       }
     }
@@ -37,7 +37,3 @@ function submitAnswers(args) {
     results.innerHTML = '<h3>You Scored <span>'+score+'</span> out of <span>'+total+'</span></h3>'
     alert('You scored ' + score + ' out of ' + total);
 }
-
-$(document).ready(function(){
-  
-});
