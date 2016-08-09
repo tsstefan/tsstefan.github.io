@@ -1,6 +1,12 @@
 body{
     background: orange;
 }
+header{
+    height: 200px;
+    width: auto;
+    background: white;
+    text-align: center;
+}
 nav{
     margin: 0 20px 20px 0;
     color: white;
