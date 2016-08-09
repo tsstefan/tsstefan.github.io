@@ -9,10 +9,11 @@ $(document).ready(function(){
   });
   $("#tButton1").click(function(){
     $("#gitHub").toggle();
-    $("#background").animate({left: '0px'});
+    $("#background").animate({left: '0px'}, "slow");
   });
 });
 
 //(HTML Object).action(do);
 // .dblclick .mouseenter . mouseleave
 // .hide .show
+// "slow" "fast"
