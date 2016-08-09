@@ -3,8 +3,7 @@ body{
 }
 nav{
     position: relative;
-    float: left;
-    margin: 20px;
+    margin: 0 20px 20px 0;
     color: white;
     height: auto;
     width: 100px;
