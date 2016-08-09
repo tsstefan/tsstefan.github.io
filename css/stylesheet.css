@@ -11,8 +11,7 @@ nav ul{
     padding: 0;
 }
 .navElem{
-    display: inline-block;
-    margin: 15px 25px;
+    margin: 15px auto;
     padding: 10px;
     background: #199fdb;
     color: white;
@@ -20,4 +19,11 @@ nav ul{
 }
 .navElem:hover{
     background: #1273a1;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: orange;
 }
