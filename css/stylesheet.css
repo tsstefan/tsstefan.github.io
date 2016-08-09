@@ -50,8 +50,7 @@ nav ul{
 #main{
     overflow: hidden;
     background: white;
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 10px;
     padding: 0 15px;
     height: 500px;
     color: #00001a;
