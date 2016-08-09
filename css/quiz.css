@@ -45,7 +45,7 @@ input[type='submit']{
     cursor: pointer;
 }
 
-#results{
+#results h3{
     background: #ff6600;
     padding: 10px;
     margin: 10px 0;
