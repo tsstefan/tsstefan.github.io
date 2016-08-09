@@ -15,7 +15,7 @@ header{
     text-align: center;
 }
 header h1{
-    padding-top: 50px;
+    padding-top: 60px;
     color: #00001a;
 }
 nav{
@@ -68,5 +68,5 @@ footer{
 footer p:first-of-type{
     width: 100%;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 45px;
 }
