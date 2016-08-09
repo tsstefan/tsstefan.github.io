@@ -1,12 +1,11 @@
 body{
     background: orange;
-    margin: 0;
-    margin-top: -21px;
+    margin: -21px -22px 0 22px;
     padding: 0;
     font-family: monospace;
 }
 header{
-    margin: 0;
+    margin: 0 21px 0 0;
     padding: 0;
     height: 150px;
     width: 100%;
@@ -56,12 +55,12 @@ nav ul{
     height: 500px;
     color: #00001a;
 }
-footer{
+footer table{
     position: absolute;
     padding: 0 15px;
     background: white;
     width: 100%;
-    margin-top: 10px;
+    height: 100%;
 }
 footer p:first-of-type{
     width: 100%;
