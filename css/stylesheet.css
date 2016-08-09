@@ -10,13 +10,14 @@ nav ul{
     margin: 0;
     padding: 0;
 }
-nav li{
+.navElem{
+    display: inline-block;
     margin: 15px 25px;
     padding: 10px;
     background: #199fdb;
     color: white;
     border-radius: 25px;
 }
-nav li:hover{
-    background: #ff9933;
+.navElem:hover{
+    background: #1273a1;
 }
