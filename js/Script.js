@@ -5,7 +5,7 @@ $(document).ready(function(){
   });
   $("#button2").mouseenter(function(){
     $("#gitHub").fadeIn(3000);
-    $("#tricked").css("color", "#000000");
+    $("#tricked").css("color", "black");
   });
   $("#tButton1").click(function(){
     $("#gitHub").toggle();
