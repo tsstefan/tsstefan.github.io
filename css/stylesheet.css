@@ -1,6 +1,7 @@
 body{
     background: orange;
     margin: 0;
+    margin-top: -21px;
     padding: 0;
 }
 header{
@@ -16,8 +17,7 @@ header h1{
 }
 nav{
     float: left;
-    margin: 0 20px 20px;
-    color: white;
+    margin: 0 10px 10px;
     height: auto;
     width: 150px;
 }
@@ -28,10 +28,8 @@ nav ul{
 }
 .navMenu li{
     margin: 15px auto;
-    padding: 10px;
     background: #199fdb;
-    color: white;
-    border-radius: 25px;
+    border-radius: 15px;
 }
 .navMenu li:hover{
     background: #1273a1;
@@ -41,12 +39,15 @@ nav ul{
 .navMenu li a{
     color: white;
     text-decoration: none;
+    padding: 10px;
+}
+.navMenu a:hover{
+    color: orange;
 }
 #main{
-    float: left;
     overflow: hidden;
     background: white;
     margin-left: 10px;
-    margin-right: 0;
+    padding: 0 15px;
     height: 500px;
 }
