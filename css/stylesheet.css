@@ -56,8 +56,8 @@ nav ul{
     color: #00001a;
 }
 footer{
-    margin: 0;
-    padding: 0;
+    position: absolute;
+    bottom: 0;
     background: white;
     width: 100%;
-    height: 100%;
+}
