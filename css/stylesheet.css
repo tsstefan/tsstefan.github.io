@@ -12,10 +12,10 @@ header{
     background-image: url("http://www.planwallpaper.com/static/images/739916-awesome-background-images.jpg");
     background-color: white;
     text-align: center;
-    color: #00001a;
 }
 header h1{
     padding-top: 50px;
+    color: white;
 }
 nav{
     float: left;
