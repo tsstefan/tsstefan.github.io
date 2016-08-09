@@ -4,29 +4,28 @@ body{
 nav{
     margin: 20px auto;
     color: white;
+    height: auto;
+    width: 20%;
 }
 nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-li{
-    display: inline-block;
-}
-.navElem{
+.navMenu li{
     margin: 15px auto;
     padding: 10px;
     background: #199fdb;
     color: white;
     border-radius: 25px;
 }
-.navElem:hover{
+.navMenu li:hover{
     background: #1273a1;
 }
-a{
+.navMenu li a{
     color: white;
     text-decoration: none;
 }
-a:hover{
+.navMenu li:hover ~ a{
     color: orange;
 }
