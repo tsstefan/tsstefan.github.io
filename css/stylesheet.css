@@ -49,10 +49,11 @@ nav ul{
 }
 #main{
     overflow: hidden;
+    overflow-y: auto;
     background: white;
     margin: 10px;
     padding: 0 15px;
-    height: 700px;
+    height: 650px;
     color: #00001a;
 }
 footer{
