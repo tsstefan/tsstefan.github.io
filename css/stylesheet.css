@@ -11,6 +11,7 @@ header{
     width: 100%;
     background: white;
     text-align: center;
+    color: #00001a;
 }
 header h1{
     padding-top: 50px;
@@ -52,4 +53,5 @@ nav ul{
     margin-top: 10px;
     padding: 0 15px;
     height: 500px;
+    color: #00001a;
 }
