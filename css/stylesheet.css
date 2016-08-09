@@ -33,10 +33,10 @@ nav ul{
     border-radius: 15px;
 }
 .navMenu li:hover{
-    background: #1273a1;
+    background: #30aee8;
     cursor: pointer;
     color: orange;
-    box-shadow: 10px 10px 5px #fff;
+    box-shadow: 5px 5px 2px #031017;
 }
 .navMenu li a{
     display: block;
@@ -45,7 +45,7 @@ nav ul{
     padding: 10px;
 }
 .navMenu a:hover{
-    color: orange;
+    color: black;
 }
 #main{
     overflow: hidden;
@@ -55,3 +55,9 @@ nav ul{
     height: 500px;
     color: #00001a;
 }
+footer{
+    margin: 0;
+    padding: 0;
+    background: white;
+    width: 100%;
+    height: 100%;
