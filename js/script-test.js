@@ -19,6 +19,29 @@ $(document).ready(function(){
     $("#gitHub").toggle();
     $("#background").animate({left: '0px'}, "slow");
   });
+  
+    var food = 'Pizza';
+  alert(food);
+  
+  var foods = new Array;
+  foods[0] = food;
+  foods[1] = 'cheese';
+  
+  var foods = [ food,'cheese'];
+  foods.push(food, 'cheese');
+  
+  for(var i = 0; i < foods.length; i++){
+    console.log(foods[i]);
+  }
+  
+  function say(word) {
+    alert(word);
+  }
+  say('Hello');
+   function math(num1, num2) {
+    alert(num1 + num2);
+  }
+  math(4, 5);
 });
 
 //(HTML Object).action(do);
