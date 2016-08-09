@@ -4,7 +4,7 @@ body{
 header{
     margin:0;
     padding: 0;
-    height: 150x;
+    height: 150px;
     width: 100%;
     background: white;
     text-align: center;
@@ -43,4 +43,6 @@ nav ul{
 #main{
     float: left;
     background: white;
+    width: 100%;
+    height: 100%;
 }
