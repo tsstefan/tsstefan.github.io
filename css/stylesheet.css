@@ -3,7 +3,7 @@ body{
 }
 header{
     height: 200px;
-    width: auto;
+    width: 100%;
     background: white;
     text-align: center;
 }
@@ -11,7 +11,7 @@ nav{
     margin: 0 20px 20px 0;
     color: white;
     height: auto;
-    width: 100px;
+    width: 150px;
 }
 nav ul{
     list-style-type: none;
