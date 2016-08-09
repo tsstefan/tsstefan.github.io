@@ -1,10 +1,11 @@
 $(document).ready(function(){
+  $("#tricked").hide();
   $("#button1").click(function(){
     $("#gitHub").fadeOut(3000);
   });
   $("#button2").mouseenter(function(){
     $("#gitHub").fadeIn(3000);
-    $("#tricked").css({'color':'black'});
+    $("#tricked").show();
   });
   $("#tButton1").click(function(){
     $("#gitHub").toggle();
@@ -13,3 +14,4 @@ $(document).ready(function(){
 
 //(HTML Object).action(do);
 // .dblclick .mouseenter . mouseleave
+// .hide .show
