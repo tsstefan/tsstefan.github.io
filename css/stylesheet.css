@@ -5,7 +5,7 @@ nav{
     margin: 20px auto;
     color: white;
 }
-nav a{
+nav div{
     float: left;
     margin: 15px 25px;
     padding: 10px;
