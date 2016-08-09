@@ -1,9 +1,13 @@
 $(document).ready(function(){
   $("#button1").click(function(){
-    $("#gitHub").fadeOut();
+    $("#gitHub").fadeOut(3000);
   });
   $("#button2").mouseenter(function(){
-    $("#gitHub").fadeIn();
+    $("#gitHub").fadeIn(3000);
+    $("#tricked").css({'color':'black'});
+  });
+  $("#tButton1").click(function(){
+    $("#gitHub").toggle();
   });
 });
 
