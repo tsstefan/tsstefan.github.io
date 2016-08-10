@@ -153,7 +153,7 @@ function prevPage(){
 }
 
 // Build Output
-function getOutput(){
+function getOutput(item){
     var videoId = item.id.videoId;
     var title = item.snippet.title;
     var description = item.snippet.description;
