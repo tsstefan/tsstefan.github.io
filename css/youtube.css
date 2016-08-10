@@ -14,7 +14,7 @@ a{
     color: #333;
 }
 #container{
-    widht: 740px;
+    width: 740px;
     background: white;
     margin: auto;
 }
@@ -78,10 +78,10 @@ footer{
     width: 32px;
     border: 0;
     cursor: pointer;
-    zoom: 1;
     filter: alpha(opacity = 65);
     opacity: 0.65;
     background: transparent url("https://rawgit.com/tsstefan/tsstefan.github.io/master/img/search.png") top left no-repeat;
+    zoom: 1;
 }
 .searchButton:hover{
     filter: alpha(opacity = 90);
