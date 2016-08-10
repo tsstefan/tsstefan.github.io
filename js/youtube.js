@@ -28,7 +28,7 @@ $(function(){
     $('#searchForm').submit(function(){
         e.preventDefault();
     });
-})
+});
 
 function search(){
     // Clear Results
