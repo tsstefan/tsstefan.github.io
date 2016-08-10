@@ -167,7 +167,7 @@ function getOutput(item){
     '<img src="'+ thumb +'">' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a id="print-button" href="">'+title+'</a></h3>' +
+    '<h3><a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
@@ -178,6 +178,17 @@ function getOutput(item){
     return output;
 }
 
+//Build the buttons
+function getButtons(prevPageToken, nextPageToken){
+    if(!prevPageToken){
+        var btnoutput = '<div class="buttoncontainer"><button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'" onclick="nextPage();">Next Page</button></div>';
+    } else {
+        var btnoutput = '<div class="buttoncontainer"><button id="prev-button" class="paging-button" data-token="'+prevPageToken+'" data-query="'+q+'" onclick="prevPage();">Previous Page</button><button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'" onclick="nextPage();">Next Page</button></div>';
+    }
+    return btnoutput;
+}
+
+/*
 function getVideoLink(item){
     var videoId = item.id.videoId;
     var videoLink = "https://www.youtube.com/embed/"+videoId;
@@ -190,13 +201,4 @@ $("#print-button").click(function() {
     document.getElementById("#iframe").setAttribute("src", link);
     $('#iframe').css("z-index", "100");
 });
-
-//Build the buttons
-function getButtons(prevPageToken, nextPageToken){
-    if(!prevPageToken){
-        var btnoutput = '<div class="buttoncontainer"><button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'" onclick="nextPage();">Next Page</button></div>';
-    } else {
-        var btnoutput = '<div class="buttoncontainer"><button id="prev-button" class="paging-button" data-token="'+prevPageToken+'" data-query="'+q+'" onclick="prevPage();">Previous Page</button><button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'" onclick="nextPage();">Next Page</button></div>';
-    }
-    return btnoutput;
-}
+*/

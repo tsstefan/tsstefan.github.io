@@ -50,10 +50,6 @@ footer{
     width: 90%;
     margin: 0 auto;
 }
-#iframe{
-    position: absolute;
-    z-index: -100;
-}
 .searchField{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
