@@ -167,7 +167,7 @@ function getOutput(item){
     '<img src="'+ thumb +'">' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a id="print-button" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
+    '<h3><a id="print-button" href="https://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
@@ -179,7 +179,8 @@ function getOutput(item){
 }
 
 $("#print-button").click(function() {
-    $("<iframe />", { src: "http://www.youtube.com/embed/"+videoId }).appendTo("header");
+    var videoId = item.id.videoId;
+    $('<iframe />', { src: 'https://www.youtube.com/embed/'+videoId, width:'560', height:'315', frameborder:'0', allowfullscreen}).appendTo("header");
 });
 
 //Build the buttons
