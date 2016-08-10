@@ -1,6 +1,4 @@
 //Searchbar Handler
-$('#iframe').hide();
-
 $(function(){
     var searchField = $('#query');
     var icon = $('#searchButton');
@@ -190,8 +188,7 @@ function getVideoLink(item){
 $("#print-button").click(function() {
     var link = getVideoLink(item);
     document.getElementById("#iframe").setAttribute("src", link);
-    $('#iframe').show();
-    $('#iframe').css("z-index");
+    $('#iframe').css("z-index", "100");
 });
 
 //Build the buttons
