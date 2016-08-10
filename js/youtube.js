@@ -15,7 +15,7 @@ $(function(){
     
     //Blur Event Handler
     $(searchField).on('blur', function(){
-        if(searchField.val === ''){
+        if(searchField.val() == ''){
             $(searchField).animate({
                 width: '45%'
             }, 300, function (){});
