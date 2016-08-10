@@ -78,7 +78,7 @@ function nextPage(){
     $('#buttons').html('');
     
     //Get Form Input
-    q = $('query').val();
+    //q = $('query').val();
     
     //Run GET Request on API
     $.get(
@@ -120,7 +120,7 @@ function prevPage(){
     $('#buttons').html('');
     
     //Get Form Input
-    q = $('query').val();
+    //q = $('query').val();
     
     //Run GET Request on API
     $.get(
