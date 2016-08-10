@@ -54,3 +54,16 @@ $(document).ready(function(){
       width:'-=50%'
       }, "slow");
 */
+
+    //Event handler
+   /* $('.myLink').on('click', function(){
+        $('h1').fadeToggle(1000);
+    });
+    */
+    //mouseenter mouseleave
+   /* $('.myLink').click(function(){
+       $('h1').replaceWith('<h3>Hello new Dimension</h3>');
+       // $('h1').css('font-size','40px');
+    });
+    $('h1').addClass('red');
+    */
