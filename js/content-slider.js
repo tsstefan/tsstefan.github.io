@@ -4,17 +4,17 @@ $(document).ready(function(){
     //var autoswitch = false;      //auto slider options
    // var autoswitch_speed = 4000; // Auto slider speed
     
-    //Add initial active class
-    $('.slide').first().addClass('active');
-    
     //Hide all slides
     $('.slide').hide();
+    
+    //Add initial active class
+    $('.slide').first().addClass('active');
     
     //Show active slide
     $('.active').show();
     
-    $('#next').on('click', nextSlide());
-    $('#prev').on('click', prevSlide());
+    $('#next').click(nextSlide());
+    $('#prev').click(prevSlide());
     
     //Autoswitch handler
      //if(autoswitch === true){
