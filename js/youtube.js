@@ -1,4 +1,6 @@
 //Searchbar Handler
+$('#iframe').hide();
+
 $(function(){
     var searchField = $('#query');
     var icon = $('#searchButton');
@@ -28,7 +30,7 @@ $(function(){
     $('#searchForm').submit(function(e){
         e.preventDefault();
     });
-})
+});
 
 function search(){
     // Clear Results
@@ -178,9 +180,17 @@ function getOutput(item){
     return output;
 }
 
-$("#print-button").click(function() {
+function getVideoLink(item){
     var videoId = item.id.videoId;
-    $('<iframe />', { src: 'https://www.youtube.com/embed/'+videoId, width:'560', height:'315', frameborder:'0', allowfullscreen}).appendTo("header");
+    var videoLink = "https://www.youtube.com/embed/"+videoId;
+        
+    return videoLink;
+}
+        
+$("#print-button").click(function() {
+    var link = getVideoLink(item);
+    document.getElementById("#iframe").href = link;
+    $('#iframe').show();
 });
 
 //Build the buttons
