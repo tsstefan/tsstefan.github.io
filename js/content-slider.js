@@ -1,7 +1,7 @@
 $(document).ready(function(){
     //set Options first
     var speed = 500;            //fade speed
-    var autoswitch = true;      //auto slider options
+    var autoswitch = false;      //auto slider options
     var autoswitch_speed = 4000; // Auto slider speed
     
     //Hide all slides

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/tsstefan/tsstefan.github.io/master/css/youtube.css">
+<title>Youtube Search</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Search <span>Youtube</span></h1>
+            <p>Search without ads</p>
+        </header>
+        <section>
+            <form id="searchForm" name="searchForm" onsubmit="return search();">
+                <div class="fieldContainer">
+                    <input type="search" id="query" class="searchField" placeholder="Search Youtube">
+                    <input type="submit" name="searchButton" id="searchButton" value="">
+                </div>
+            </form>
+            
+            <ul id="results">
+                
+            </ul>
+            <div id="buttons">
+                
+            </div>
+        </section>
+        <footer>
+            <p></p>
+        </footer>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script src="https://rawgit.com/tsstefan/tsstefan.github.io/master/js/youtube.js"></script>
+</body>
+</html>
