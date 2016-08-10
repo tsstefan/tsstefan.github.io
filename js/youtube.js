@@ -189,7 +189,7 @@ function getVideoLink(item){
         
 $("#print-button").click(function() {
     var link = getVideoLink(item);
-    document.getElementById("#iframe").src = link;
+    document.getElementById("#iframe").setAttribute("src", link);
     $('#iframe').show();
     $('#iframe').css("z-index");
 });
