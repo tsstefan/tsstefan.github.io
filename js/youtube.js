@@ -74,8 +74,8 @@ function nextPage(){
     var q = $('#next-button').data('query');
     
     // Clear Results
-    $('results').html('');
-    $('buttons').html('');
+    $('#results').html('');
+    $('#buttons').html('');
     
     //Get Form Input
     q = $('query').val();
@@ -116,8 +116,8 @@ function prevPage(){
     var q = $('#prev-button').data('query');
     
     // Clear Results
-    $('results').html('');
-    $('buttons').html('');
+    $('#results').html('');
+    $('#buttons').html('');
     
     //Get Form Input
     q = $('query').val();
@@ -164,14 +164,14 @@ function getOutput(item){
     //Build Output String
     var output = '<li>' +
     '<div class="list-left">' +
-    '<img src="'+thumb+'">' +
+    '<img src="'+ thumb +'">' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>'+
-    '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>'+
-    '<p>'+description+'</p>'+
-    '</div>'+
-    '</li>'+
+    '<h3><a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
+    '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
+    '<p>'+description+'</p>' +
+    '</div>' +
+    '</li>' +
     '<div class="clearfix"></div>' +
     '';
     
