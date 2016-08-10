@@ -13,8 +13,8 @@ $(document).ready(function(){
     //Show active slide
     $('.active').show();
     
-    $('#next').click(nextSlide());
-    $('#prev').click(prevSlide());
+    $('#nextSlide').click(nextSlide());
+    $('#prevSlide').click(prevSlide());
     
     //Autoswitch handler
      if(autoswitch === true){
