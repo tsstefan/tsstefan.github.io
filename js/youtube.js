@@ -169,7 +169,7 @@ function getOutput(item){
     '<img src="'+ thumb +'">' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a id="print-button">'+title+'</a></h3>' +
+    '<h3><a id="print-button" href="">'+title+'</a></h3>' +
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
@@ -189,9 +189,9 @@ function getVideoLink(item){
         
 $("#print-button").click(function() {
     var link = getVideoLink(item);
-    document.getElementById("#iframe").href = link;
+    document.getElementById("#iframe").src = link;
     $('#iframe').show();
-    $('#iframe').css("z-index", "100");
+    $('#iframe').css("z-index");
 });
 
 //Build the buttons
