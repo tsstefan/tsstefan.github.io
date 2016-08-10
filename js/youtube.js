@@ -167,7 +167,7 @@ function getOutput(item){
     '<img src="'+ thumb +'">' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a class="fancybox fancybox.iframe" target="vidContainer" data-fancybox-type="iframe" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
+    '<h3><a id="print-button" href="http://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
@@ -177,6 +177,10 @@ function getOutput(item){
     
     return output;
 }
+
+$("#print-button").click(function() {
+    $("<iframe />", { src: "http://www.youtube.com/embed/"+videoId }).appendTo("header");
+});
 
 //Build the buttons
 function getButtons(prevPageToken, nextPageToken){
