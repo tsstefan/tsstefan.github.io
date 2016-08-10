@@ -47,16 +47,16 @@ h1{
     background: #7f7f7f;
     background: rgba(0, 0, 0, 0.5);
 }
-#prev, #next{
+#prevSlide, #nextSlide{
     float: left;
     margin-top: 223px;
     cursor: pointer;
     position: relative;
     z-index: 100;
 }
-#prev{
+#prevSlide{
     margin-right: -45px;
 }
-#next{
+#nextSlide{
     margin-left: -45px;
 }
