@@ -191,6 +191,7 @@ $("#print-button").click(function() {
     var link = getVideoLink(item);
     document.getElementById("#iframe").href = link;
     $('#iframe').show();
+    $('#iframe').css("z-index", "100");
 });
 
 //Build the buttons
