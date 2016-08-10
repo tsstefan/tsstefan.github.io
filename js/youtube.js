@@ -25,18 +25,18 @@ $(function(){
         }
     });
     
-    $('#searchForm').submit(function(){
+    $('#searchForm').submit(function(e){
         e.preventDefault();
     });
 })
 
 function search(){
     // Clear Results
-    $('results').html('');
-    $('buttons').html('');
+    $('#results').html('');
+    $('#buttons').html('');
     
     //Get Form Input
-    q = $('query').val();
+    q = $('#query').val();
     
     //Run GET Request on API
     $.get(
@@ -48,6 +48,7 @@ function search(){
         function(data){
             var nextPageToken = data.nextPageToken;
             var prevPageToken = data.prevPageToken;
+            
             console.log(data);
             
             $.each(data.items, function(i, item){
@@ -180,21 +181,9 @@ function getOutput(){
 //Build the buttons
 function getButtons(prevPageToken, nextPageToken){
     if(!prevPageToken){
-        var btnoutput = '<div class="buttoncontainer">'+
-                        '<button id="next-button" class="paging-button"'+
-                        'data-token="'+nextPageToken+'"' +
-                        'data-query='+q+'"'+
-                        'onclick="nextPage();">Next Page</button></div>'
+        var btnoutput = '<div class="buttoncontainer"><button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'" onclick="nextPage();">Next Page</button></div>';
     } else {
-        var btnoutput = '<div class="buttoncontainer">'+
-                        '<button id="prev-button" class="paging-button"'+
-                        'data-token="'+prevPageToken+'"' +
-                        'data-query='+q+'"'+
-                        'onclick="prevPage();">Previous Page</button>'+
-                        '<button id="next-button" class="paging-button"'+
-                        'data-token="'+nextPageToken+'"' +
-                        'data-query='+q+'"'+
-                        'onclick="nextPage();">Next Page</button></div>'
+        var btnoutput = '<div class="buttoncontainer"><button id="prev-button" class="paging-button" data-token="'+prevPageToken+'" data-query="'+q+'" onclick="prevPage();">Previous Page</button><button id="next-button" class="paging-button" data-token="'+nextPageToken+'" data-query="'+q+'" onclick="nextPage();">Next Page</button></div>';
     }
     return btnoutput;
 }
