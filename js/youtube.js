@@ -85,7 +85,7 @@ function nextPage(){
         "https://www.googleapis.com/youtube/v3/search", {
             part: 'snippet, id',
             q: q,
-            pageToken: token;
+            pageToken: token,
             type: 'video',
             key: 'AIzaSyAdoP1j9qzxPbqKvGfoL6tCeYh90W0jDQ0'},
         function(data){
