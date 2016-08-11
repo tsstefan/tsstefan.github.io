@@ -35,12 +35,12 @@ nav ul{
     border-radius: 15px;
 }
 .navMenu li:hover{
-    background: #30aee8;
+    background: #47b7eb;
     cursor: pointer;
     color: orange;
     box-shadow: 4px 4px 2px #031017;
-    margin-left: -2px;
-    margin-top: -2px;
+    -moz-box-shadow: 4px 4px 2px #031017;
+    -webkit-box-shadow: 4px 4px 2px #031017;
 }
 .navMenu li a{
     display: block;
