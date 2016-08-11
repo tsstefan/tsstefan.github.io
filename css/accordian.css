@@ -40,7 +40,7 @@ h1{
 }
 .faq li.a{
     background: #ddd;
-    display: none !important;
+    display: none;
 }
 .rotate{
     -moz-transform: rotate(90deg);
