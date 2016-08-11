@@ -2,6 +2,8 @@
 $(function(){
     var searchField = $('#query');
     var icon = $('#searchButton');
+    var action = 'click';
+    var speed = 500;
     
     //Focus Handler
     $(searchField).on('focus', function(){
@@ -66,6 +68,10 @@ function search(){
             $('#buttons').append(buttons);
         }
     );
+    $('h3.a').on(action, function(){
+        //toggle a slide for the next element after the clicked one and slide up all other siblings
+        $(this).next('div.iframe').slideToggle(speed).siblings('div.iframe').slideUp();
+        });
 }
 
 //Next Page Function
@@ -108,6 +114,10 @@ function nextPage(){
             $('#buttons').append(buttons);
         }
     );
+    $('h3.a').on(action, function(){
+        //toggle a slide for the next element after the clicked one and slide up all other siblings
+        $(this).next('div.iframe').slideToggle(speed).siblings('div.iframe').slideUp();
+        });
 }
 
 //Previous Page Function
@@ -150,6 +160,11 @@ function prevPage(){
             $('#buttons').append(buttons);
         }
     );
+    
+    $('h3.a').on(action, function(){
+        //toggle a slide for the next element after the clicked one and slide up all other siblings
+        $(this).next('div.iframe').slideToggle(speed).siblings('div.iframe').slideUp();
+        });
 }
 
 // Build Output
@@ -171,6 +186,7 @@ function getOutput(item){
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
+    '<div><iframe class="iframe" src="https://www.youtube.com/embed/'+videoId+'" frameborder="0" allowfullscreen></iframe></div>' +
     '</li>' +
     '<div class="clearfix"></div>' +
     '';
