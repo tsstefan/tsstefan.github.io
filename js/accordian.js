@@ -3,7 +3,7 @@ var action="click";
 var speed="500";
 
 $(document).ready(function(){
-    $("li.a").accordion({collapsible : true, active : 'none'});
+    $("li.a").accordion({header: 'li.q', collapsible : true, active : 'none'});
     $('li.q').on(action, function(){
 
         //toggle a slide for the next element after the clicked one and slide up all other siblings
