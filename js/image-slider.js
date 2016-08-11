@@ -12,7 +12,7 @@ $(document).ready(function(){
         }
    });
    //set width
-   $('slides').width(totalWidth);
+   $('#slides').width(totalWidth);
    
    $('#menu ul li a').click(function(e, keepScroll){
         //remove active class, add inactive
