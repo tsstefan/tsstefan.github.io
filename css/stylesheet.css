@@ -33,17 +33,17 @@ nav ul{
     margin: 15px auto;
     background: #199fdb;
     border-radius: 15px;
-    -webkit-box-shadow: inset 5px 5px 10px -5px rgba(0,0,0,1);
-    -moz-box-shadow: inset 5px 5px 10px -5px rgba(0,0,0,1);
-    box-shadow: inset 5px 5px 10px -5px rgba(0,0,0,1);
+    box-shadow: 4px 4px 2px #031017;
+    -moz-box-shadow: 4px 4px 2px #031017;
+    -webkit-box-shadow: 4px 4px 2px #031017;
 }
 .navMenu li:hover{
     background: #47b7eb;
     cursor: pointer;
     color: orange;
-    box-shadow: 4px 4px 2px #031017;
-    -moz-box-shadow: 4px 4px 2px #031017;
-    -webkit-box-shadow: 4px 4px 2px #031017;
+    -webkit-box-shadow: inset 5px 5px 10px -5px rgba(0,0,0,1);
+    -moz-box-shadow: inset 5px 5px 10px -5px rgba(0,0,0,1);
+    box-shadow: inset 5px 5px 10px -5px rgba(0,0,0,1);
 }
 .navMenu li a{
     display: block;
