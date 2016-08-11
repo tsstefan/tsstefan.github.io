@@ -1,9 +1,10 @@
 $(document).ready(function(){
+   //declare variables
    var totalWidth = 0;
    var positions = new Array();
    
    $('#slides, .slide').each(function(i){
-        positions[i] = totalwidth;
+        positions[i] = totalWidth;
         totalWidth += $(this).width();
         
         if(!$(this).width()){
@@ -13,7 +14,7 @@ $(document).ready(function(){
    });
    //set width
    $('#slides').width(totalWidth);
-   
+   //menu item klick handler
    $('#menu ul li .a').click(function(e, keepScroll){
         //remove active class, add inactive
         $('li.photo').removeClass('active').addClass('inactive');
