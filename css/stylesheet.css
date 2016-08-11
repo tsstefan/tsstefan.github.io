@@ -38,7 +38,9 @@ nav ul{
     background: #30aee8;
     cursor: pointer;
     color: orange;
-    box-shadow: 5px 5px 2px #031017;
+    box-shadow: 4px 4px 2px #031017;
+    margin-left: -2px;
+    margin-top: -2px;
 }
 .navMenu li a{
     display: block;
