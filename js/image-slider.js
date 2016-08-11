@@ -2,7 +2,7 @@ $(document).ready(function(){
    var totalWidth = 0;
    var positions = new Array();
    
-   $('#slides, .slide').each(function(){
+   $('#slides, .slide').each(function(i){
         positions[i] = totalwidth;
         totalWidth += $(this).width;
         
