@@ -69,7 +69,7 @@ header{
     overflow: hidden;
 }
 #menu li.active, #menu li.active:hover{
-    background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/active.png') no-repeat;
+    background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/active_bg.png') no-repeat;
 }
 #menu .active{
     cursor: default;
