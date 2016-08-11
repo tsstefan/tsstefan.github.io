@@ -161,10 +161,7 @@ function prevPage(){
         }
     );
     
-    $('a.openI').on(action, function(){
-        //toggle a slide for the next element after the clicked one and slide up all other siblings
-        $(this).next('div.videoFrame').slideToggle(speed).siblings('div.videoFrame').slideUp();
-        });
+    
 }
 
 // Build Output
@@ -203,6 +200,14 @@ function getButtons(prevPageToken, nextPageToken){
     }
     return btnoutput;
 }
+
+$(document).ready(function(){
+    $("div.videoFrame").accordion({collapsible : true, active : false});
+    $('a.openI').on(action, function(){
+        //toggle a slide for the next element after the clicked one and slide up all other siblings
+        $(this).next('div.videoFrame').slideToggle(speed).siblings('div.videoFrame').slideUp();
+        });
+});
 
 /*
 function getVideoLink(item){
