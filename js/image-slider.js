@@ -15,7 +15,7 @@ $(document).ready(function(){
    //set width
    $('#slides').width(totalWidth);
    //menu item klick handler
-   $('#menu ul li .a').click(function(e, keepScroll){
+   $('#menu ul li a').click(function(e, keepScroll){
         //remove active class, add inactive
         $('li.photo').removeClass('active').addClass('inactive');
         //add active class to parent
@@ -32,7 +32,7 @@ $(document).ready(function(){
     });
    
    //Make first image active
-   $('#menu ul li.photo:first-child').addClass('active').siblings().addClass('inactive');
+   $('#menu ul li.photo:first').addClass('active').siblings().addClass('inactive');
    
    //autoScroll
    var current = 1;
@@ -41,7 +41,7 @@ $(document).ready(function(){
             return false;
         }
         //eq reduces matches at specified index to 1
-        $('#menu ul li .a').eq(current%$('#menu ul li .a').length).trigger('click', [true]);
+        $('#menu ul li a').eq(current%$('#menu ul li a').length).trigger('click', [true]);
         current ++;
    }
    
