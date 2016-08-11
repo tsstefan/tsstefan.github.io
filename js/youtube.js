@@ -169,21 +169,20 @@ function getOutput(item){
     var videoId = item.id.videoId;
     var title = item.snippet.title;
     var description = item.snippet.description;
-    var thumb = item.snippet.thumbnails.high.url; //high quality thumbnail
+//    var thumb = item.snippet.thumbnails.high.url; //high quality thumbnail
     var channelTitle = item.snippet.channelTitle;
     var videoDate = item.snippet.publishedAt;
     
     //Build Output String
     var output = '<li>' +
     '<div class="list-left">' +
-    '<img src="'+ thumb +'">' +
+    '<iframe src="https://www.youtube.com/embed/'+videoId+'" frameborder="0" allowfullscreen></iframe>' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a class="openI" href="">'+title+'</a></h3>' +
+    '<h3><a class="fancybox fancybox.iframe" href="https://www.youtube.com/embed/'+videoId+'">'+title+'</a></h3>' +
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
-    '<div class="videoFrame"><iframe src="https://www.youtube.com/embed/'+videoId+'" frameborder="0" allowfullscreen></iframe></div>' +
     '</li>' +
     '<div class="clearfix"></div>' +
     '';
@@ -200,14 +199,6 @@ function getButtons(prevPageToken, nextPageToken){
     }
     return btnoutput;
 }
-
-$(document).ready(function(){
-    $("div.videoFrame").accordion({collapsible : true, active : false});
-    $('a.openI').on(action, function(){
-        //toggle a slide for the next element after the clicked one and slide up all other siblings
-        $(this).next('div.videoFrame').slideToggle(speed).siblings('div.videoFrame').slideUp();
-        });
-});
 
 /*
 function getVideoLink(item){
