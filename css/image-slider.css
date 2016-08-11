@@ -45,7 +45,7 @@ header{
     overflow: hidden;
 }
 #slides{
-    height: auto;
+    height: 900px;
     width: 900px;
     overflow: hidden;
     padding-top: 20px;
