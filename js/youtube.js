@@ -68,9 +68,9 @@ function search(){
             $('#buttons').append(buttons);
         }
     );
-    $('h3.a').on(action, function(){
+    $('a.openI').on(action, function(){
         //toggle a slide for the next element after the clicked one and slide up all other siblings
-        $(this).next('div.iframe').slideToggle(speed).siblings('div.iframe').slideUp();
+        $(this).next('div.videoFrame').slideToggle(speed).siblings('div.videoFrame').slideUp();
         });
 }
 
@@ -114,9 +114,9 @@ function nextPage(){
             $('#buttons').append(buttons);
         }
     );
-    $('h3.a').on(action, function(){
+    $('a.openI').on(action, function(){
         //toggle a slide for the next element after the clicked one and slide up all other siblings
-        $(this).next('div.iframe').slideToggle(speed).siblings('div.iframe').slideUp();
+        $(this).next('div.videoFrame').slideToggle(speed).siblings('div.videoFrame').slideUp();
         });
 }
 
@@ -161,9 +161,9 @@ function prevPage(){
         }
     );
     
-    $('h3.a').on(action, function(){
+    $('a.openI').on(action, function(){
         //toggle a slide for the next element after the clicked one and slide up all other siblings
-        $(this).next('div.iframe').slideToggle(speed).siblings('div.iframe').slideUp();
+        $(this).next('div.videoFrame').slideToggle(speed).siblings('div.videoFrame').slideUp();
         });
 }
 
@@ -182,11 +182,11 @@ function getOutput(item){
     '<img src="'+ thumb +'">' +
     '</div>' +
     '<div class="list-right">' +
-    '<h3><a href="">'+title+'</a></h3>' +
+    '<h3><a class="openI" href="">'+title+'</a></h3>' +
     '<small>By <span class="cTitle">'+channelTitle+'</span> on '+videoDate+'</small>' +
     '<p>'+description+'</p>' +
     '</div>' +
-    '<div><iframe class="iframe" src="https://www.youtube.com/embed/'+videoId+'" frameborder="0" allowfullscreen></iframe></div>' +
+    '<div class="videoFrame"><iframe src="https://www.youtube.com/embed/'+videoId+'" frameborder="0" allowfullscreen></iframe></div>' +
     '</li>' +
     '<div class="clearfix"></div>' +
     '';
