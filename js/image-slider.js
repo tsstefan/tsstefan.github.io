@@ -4,7 +4,7 @@ $(document).ready(function(){
    
    $('#slides, .slide').each(function(i){
         positions[i] = totalwidth;
-        totalWidth += $(this).width;
+        totalWidth += $(this).width();
         
         if(!$(this).width()){
             alert('Please add a width to your images');
