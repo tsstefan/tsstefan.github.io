@@ -21,7 +21,6 @@ a, a:visited{
 }
 a:hover{
     text-decoration: underline;
-    cursor: pointer;
 }
 p{
     padding-top: 10px;
@@ -29,7 +28,7 @@ p{
 }
 header{
     background: url("https://rawgit.com/tsstefan/tsstefan.github.io/master/img/panel.jpg");
-    height: 35px;
+    height: 30px;
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
 }
@@ -48,6 +47,7 @@ header{
     height: 675px;
     width: 900px;
     overflow: hidden;
+    padding-top: 20px;
 
 }
 .slide{
@@ -61,14 +61,14 @@ header{
     padding: 0;
 }
 #menu li{
-    width: 70px;
+    width: 60px;
     margin-left: -4px;
     display: inline-block;
-    list-style-type: none;
-    height: 70px;
+    list-style: none;
+    height: 45px;
     overflow: hidden;
 }
-#menu li.active, li.active:hover{
+#menu li.active, #menu li.active:hover{
     background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/active.png') no-repeat;
 }
 #menu .active{
@@ -82,7 +82,7 @@ header{
 #menu li a{
     display: block;
     background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png') no-repeat right;
-    height: 50px;
+    height: 35px;
     padding-top: 10px;
 }
 
