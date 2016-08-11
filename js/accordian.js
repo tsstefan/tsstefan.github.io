@@ -1,5 +1,5 @@
 //jQuery UI
-var acition="click";
+var action="click";
 var speed="500";
 
 $(document).ready(function(){
