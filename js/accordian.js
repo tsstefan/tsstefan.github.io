@@ -2,7 +2,7 @@
 var action="click";
 var speed="500";
 
-
+$(document).ready(function(){
     $('li.q').on(action, function(){
         //toggle a slide for the next element after the clicked one and slide up all other siblings
         $(this).next().slideToggle(speed).siblings('li.a').slideUp();
@@ -12,3 +12,4 @@ var speed="500";
         //toggle rotate Class
         img.toggleClass('rotate');
         });
+});
