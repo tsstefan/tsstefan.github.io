@@ -44,7 +44,7 @@ $(document).ready(function(){
         current ++;
    }
    
-   //dureation for autoscroll
+   //duration for autoscroll
    var duration = 10;
-   var itvl = setInterval(function(){autoScroll()}, duration*1000);
+   var itvl = setInterval(function(){autoScroll()},duration*1000);
 });
