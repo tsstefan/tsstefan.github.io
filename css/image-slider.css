@@ -68,20 +68,20 @@ header{
     overflow: hidden;
 }
 #menu li.active, li.active:hover{
-    background: url(https://rawgit.com/tsstefan/tsstefan.github.io/master/img/active.png) no-repeat;
+    background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/active.png') no-repeat;
 }
 #menu .active{
     cursor: default;
 }
 #menu .sep{
     width: 2px;
-    background: url(https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png) no-repeat right;
+    background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png') no-repeat right;
     margin-right: -2px;
 }
 #menu li a{
     display: block;
-    background: url(https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png) no-repeat right;
-    height: 35px;
+    background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png') no-repeat right;
+    height: 50px;
     padding-top: 10px;
 }
 
