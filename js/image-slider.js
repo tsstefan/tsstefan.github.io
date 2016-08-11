@@ -3,7 +3,7 @@ $(document).ready(function(){
    var positions = new Array();
    
    $('#slides, .slide').each(function(){
-        $positions[i] = totalwidth;
+        positions[i] = totalwidth;
         totalWidth += $(this).width;
         
         if(!$(this).width()){
