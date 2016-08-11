@@ -29,7 +29,7 @@ p{
 }
 header{
     background: url("https://rawgit.com/tsstefan/tsstefan.github.io/master/img/panel.jpg");
-    height: 55px;
+    height: 35px;
     padding-top: 10px;
     border-bottom: 1px solid #ccc;
 }
@@ -45,16 +45,16 @@ header{
     overflow: hidden;
 }
 #slides{
-    height: 900px;
+    height: 675px;
     width: 900px;
     overflow: hidden;
-    padding-top: 20px;
+
 }
 .slide{
     float: left !important;
 }
 #menu{
-    height: 70px;
+    height: 45px;
 }
 #menu ul{
     margin: 0;
