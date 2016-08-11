@@ -11,7 +11,7 @@ body{
 #container{
     margin: 15px auto;
     text-align: center;
-    width: 500px;
+    width: 900px;
     position: relative;
 }
 a, a:visited{
@@ -40,12 +40,12 @@ header{
     -webkit-border-radius: 5px;
     border-radius: 5px;
     background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/panel.jpg') repeat-x bottom center #ffffff;
-    width: 500px;
+    width: 900px;
     overflow: hidden;
 }
 #slides{
     height: 240px;
-    width: 500px;
+    width: 900px;
     overflow: hidden;
     padding-top: 20px;
 }
