@@ -59,8 +59,7 @@ nav ul{
     padding: 0 15px;
     height: 650px;
     color: #00001a;
-    background: url('');
-    opacity: 0.6;
+    border-left: 1px solid #f2f2f2;
 }
 footer{
     padding: 0 15px;
