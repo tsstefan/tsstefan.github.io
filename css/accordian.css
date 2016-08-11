@@ -32,7 +32,7 @@ h1{
     padding: 20px;
 }
 .faq li.q{
-    background: #666;
+    background: #eee;
     font-weight: bold;
     font-size: 120%;
     border-bottom: 1px #ddd solid;
@@ -47,7 +47,7 @@ faq li.a{
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-#media(max-width: 800px){
+@media(max-width: 800px){
     #container{
         width: 90%;
     }
