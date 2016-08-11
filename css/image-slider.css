@@ -14,13 +14,14 @@ body{
     width: 900px;
     position: relative;
 }
-a, a:visited{
+.a, .a:visited{
     color: #0196e3;
     text-decoration: none;
     outline: none;
 }
-a:hover{
+.a:hover{
     text-decoration: underline;
+    cursor: pointer;
 }
 p{
     padding-top: 10px;
@@ -78,13 +79,13 @@ header{
     background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png') no-repeat right;
     margin-right: -2px;
 }
-#menu li a{
+#menu li .a{
     display: block;
     background: url('https://rawgit.com/tsstefan/tsstefan.github.io/master/img/separator.png') no-repeat right;
     height: 50px;
     padding-top: 10px;
 }
 
-#menu a img{
+#menu .a img{
     border: none;
 }
