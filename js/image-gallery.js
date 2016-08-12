@@ -62,6 +62,6 @@ $(document).ready(function(){
         //get the overlay
         var overlay = $(this).children('.overlay');
         
-        overlay.FadeOut(500);
+        overlay.fadeOut(500);
     });
 });
