@@ -18,7 +18,7 @@ $(document).ready(function(){
                if(!$(this).hasClass(category)){
                 $(this).hide().addClass('hidden');
                } else{
-                $('this').fadeIn('slow').removeClass('hidden');
+                $(this).fadeIn('slow').removeClass('hidden');
                }
             });
         }
