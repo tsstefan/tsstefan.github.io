@@ -15,28 +15,28 @@ $(document).ready(function(){
    var spot9 = $('#spot9');
    
    $('#board li').on('click', function(){
-        if(spot1.hasClass('o') && spot2.hasClass('o') && spot3.hasclass('o') ||
-             spot4.hasClass('o') && spot5.hasClass('o') && spot6.hasclass('o') ||
-             spot7.hasClass('o') && spot8.hasClass('o') && spot9.hasclass('o') ||
-             spot1.hasClass('o') && spot4.hasClass('o') && spot7.hasclass('o') ||
-             spot2.hasClass('o') && spot5.hasClass('o') && spot8.hasclass('o') ||
-             spot3.hasClass('o') && spot6.hasClass('o') && spot9.hasclass('o') ||
-             spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasclass('o') ||
-             spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasclass('o')
+        if(spot1.hasClass('o') && spot2.hasClass('o') && spot3.hasClass('o') ||
+             spot4.hasClass('o') && spot5.hasClass('o') && spot6.hasClass('o') ||
+             spot7.hasClass('o') && spot8.hasClass('o') && spot9.hasClass('o') ||
+             spot1.hasClass('o') && spot4.hasClass('o') && spot7.hasClass('o') ||
+             spot2.hasClass('o') && spot5.hasClass('o') && spot8.hasClass('o') ||
+             spot3.hasClass('o') && spot6.hasClass('o') && spot9.hasClass('o') ||
+             spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
+             spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')
         ){
             alert('Winner: o');
             $('#board li').text('+');
             $('#board li').removeClass('disable');
             $('#board li').removeClass('o');
             $('#board li').removeClass('x');
-        } else if (spot1.hasClass('x') && spot2.hasClass('x') && spot3.hasclass('x') ||
-             spot4.hasClass('x') && spot5.hasClass('x') && spot6.hasclass('x') ||
-             spot7.hasClass('x') && spot8.hasClass('x') && spot9.hasclass('x') ||
-             spot1.hasClass('x') && spot4.hasClass('x') && spot7.hasclass('x') ||
-             spot2.hasClass('x') && spot5.hasClass('x') && spot8.hasclass('x') ||
-             spot3.hasClass('x') && spot6.hasClass('x') && spot9.hasclass('x') ||
-             spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasclass('x') ||
-             spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasclass('x')
+        } else if (spot1.hasClass('x') && spot2.hasClass('x') && spot3.hasClass('x') ||
+             spot4.hasClass('x') && spot5.hasClass('x') && spot6.hasClass('x') ||
+             spot7.hasClass('x') && spot8.hasClass('x') && spot9.hasClass('x') ||
+             spot1.hasClass('x') && spot4.hasClass('x') && spot7.hasClass('x') ||
+             spot2.hasClass('x') && spot5.hasClass('x') && spot8.hasClass('x') ||
+             spot3.hasClass('x') && spot6.hasClass('x') && spot9.hasClass('x') ||
+             spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasClass('x') ||
+             spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasClass('x')
         ){
             alert('Winner: x');
             $('#board li').text('+');
@@ -56,14 +56,14 @@ $(document).ready(function(){
             turns++;
             $(this).text(o);
             $(this).addClass('disable o');
-            if(spot1.hasClass('o') && spot2.hasClass('o') && spot3.hasclass('o') ||
-             spot4.hasClass('o') && spot5.hasClass('o') && spot6.hasclass('o') ||
-             spot7.hasClass('o') && spot8.hasClass('o') && spot9.hasclass('o') ||
-             spot1.hasClass('o') && spot4.hasClass('o') && spot7.hasclass('o') ||
-             spot2.hasClass('o') && spot5.hasClass('o') && spot8.hasclass('o') ||
-             spot3.hasClass('o') && spot6.hasClass('o') && spot9.hasclass('o') ||
-             spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasclass('o') ||
-             spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasclass('o')
+            if(spot1.hasClass('o') && spot2.hasClass('o') && spot3.hasClass('o') ||
+             spot4.hasClass('o') && spot5.hasClass('o') && spot6.hasClass('o') ||
+             spot7.hasClass('o') && spot8.hasClass('o') && spot9.hasClass('o') ||
+             spot1.hasClass('o') && spot4.hasClass('o') && spot7.hasClass('o') ||
+             spot2.hasClass('o') && spot5.hasClass('o') && spot8.hasClass('o') ||
+             spot3.hasClass('o') && spot6.hasClass('o') && spot9.hasClass('o') ||
+             spot1.hasClass('o') && spot5.hasClass('o') && spot9.hasClass('o') ||
+             spot3.hasClass('o') && spot5.hasClass('o') && spot7.hasClass('o')
              ){
                 alert('Winner: o');
                 turns = 0;
@@ -72,14 +72,14 @@ $(document).ready(function(){
             turns++;
             $(this).text(o);
             $(this).addClass('disable x');
-            if(spot1.hasClass('x') && spot2.hasClass('x') && spot3.hasclass('x') ||
-             spot4.hasClass('x') && spot5.hasClass('x') && spot6.hasclass('x') ||
-             spot7.hasClass('x') && spot8.hasClass('x') && spot9.hasclass('x') ||
-             spot1.hasClass('x') && spot4.hasClass('x') && spot7.hasclass('x') ||
-             spot2.hasClass('x') && spot5.hasClass('x') && spot8.hasclass('x') ||
-             spot3.hasClass('x') && spot6.hasClass('x') && spot9.hasclass('x') ||
-             spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasclass('x') ||
-             spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasclass('x')
+            if(spot1.hasClass('x') && spot2.hasClass('x') && spot3.hasClass('x') ||
+             spot4.hasClass('x') && spot5.hasClass('x') && spot6.hasClass('x') ||
+             spot7.hasClass('x') && spot8.hasClass('x') && spot9.hasClass('x') ||
+             spot1.hasClass('x') && spot4.hasClass('x') && spot7.hasClass('x') ||
+             spot2.hasClass('x') && spot5.hasClass('x') && spot8.hasClass('x') ||
+             spot3.hasClass('x') && spot6.hasClass('x') && spot9.hasClass('x') ||
+             spot1.hasClass('x') && spot5.hasClass('x') && spot9.hasClass('x') ||
+             spot3.hasClass('x') && spot5.hasClass('x') && spot7.hasClass('x')
              ){
                 alert('Winner: x');
                 turns = 0;
