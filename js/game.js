@@ -70,7 +70,7 @@ $(document).ready(function(){
             }
         } else{
             turns++;
-            $(this).text(o);
+            $(this).text(x);
             $(this).addClass('disable x');
             if(spot1.hasClass('x') && spot2.hasClass('x') && spot3.hasClass('x') ||
              spot4.hasClass('x') && spot5.hasClass('x') && spot6.hasClass('x') ||
