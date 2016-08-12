@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Plugin Example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="jquery.linkIt.js"></script>
+        <script>
+            $(document).ready(function(){
+               $('span').linkIt({
+                href:   'https://test.com',
+                text:   'Test',
+                target: '_blank'
+                }); 
+            });
+        </script>
+    </head>
+    <body>
+        <h1>LinkIt Demo</h1>
+        <p>This is a jQuery LinkIt plugin demo. It makes <span>this text</span> into a link</p>
+    </body>
+</html>
