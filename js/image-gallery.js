@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('nav a').on('click', function(){
         //Current class assignment
         $('nav li.current').removeClass('current');
-        $(this).parent.addClass('current');
+        $(this).parent().addClass('current');
         
         //set heading text
         $('h1#heading').text($(this).text());
@@ -29,12 +29,12 @@ $(document).ready(function(){
     //mouse enter -> overlay
     $('ul#gallery li').on('mouseenter', function(){
         //get data attribute values
-        var title = $(this).children.data('title');
-        var desc = $(this).children.data('desc');
+        var title = $(this).children().data('title');
+        var desc = $(this).children().data('desc');
         
         //validation
         if(title === null){
-            title = 'Click to Enlarge';
+            title = '';
         }
         if(desc === null){
             desc = 'Click to Enlarge';
