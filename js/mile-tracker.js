@@ -20,13 +20,13 @@ $(document).one('pageinit', function(){
         
         //check if empty
         if(runs !== '' && runs!== null ){
-            for(var i; i < runs.length; i++){
-                $('#stats').append('<li class="ui-body-inherit ui-li-static"><strong>Date: </strong>'+runs[i]['date']+
-                                   '<br><strong>Distance: </strong>'+runs[i]['miles']+'m<div class="controls">'+
-                                   '<a href="#edit" id="editLink" data-miles="'+runs[i]['miles']+'" data-date="'+runs[i]['date']+'">Edit</a> |'+
-                                   '<a href="#"data-miles="'+runs[i]['miles']+'" data-date="'+runs[i]['date']+'" onclick="return confirmation(\'Are you sure?\')">Delete</a></div></li>');
+            for(var i = 0; i < runs.length; i++){
+                $('#stats').append('<li class="ui-body-inherit ui-li-static"><strong>Date: </strong>'+runs[i]["date"]+
+                                   '<br><strong>Distance: </strong>'+runs[i]["miles"]+'m<div class="controls">'+
+                                   '<a href="#edit" id="editLink" data-miles="'+runs[i]["miles"]+'" data-date="'+runs[i]['date']+'">Edit</a> |'+
+                                   '<a href="#"data-miles="'+runs[i]["miles"]+'" data-date="'+runs[i]["date"]+'" onclick="return confirmation(\'Are you sure?\')">Delete</a></div></li>');
             }
-            $('home').bind('pageinit', function(){
+            $('#home').bind('pageinit', function(){
                 $('#stats').listview('refresh');
             });
         } else {
